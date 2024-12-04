@@ -77,6 +77,85 @@
         </header>
 
         <section
+            <!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <meta name="description" content="" />
+        <link
+            rel="shortcut icon"
+            href="./assets/logo/logo.png"
+            type="image/x-icon"
+        />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="Title of the project" />
+        <meta property="og:description" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://github.com/PaulleDemon" />
+        <!--Replace with the current website url-->
+        <meta property="og:image" content="" />
+
+        <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css" /> -->
+        <link rel="stylesheet" href="./css/tailwind-build.css">
+        <link rel="stylesheet" href="css/index.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+            integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body
+        class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-black tw-text-white"
+    >
+        <header
+            class="tw-max-w-lg:tw-px-4 tw-max-w-lg:tw-mr-auto tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] lg:tw-justify-around"
+        >
+            <a class="tw-h-[50px] tw-w-[50px] tw-p-[4px]" href="">
+                <img
+                    src="./assets/logo/logo.png"
+                    alt="logo"
+                    class="tw-object tw-h-full tw-w-full"
+                />
+            </a>
+            <div
+                class="collapsible-header animated-collapse max-lg:tw-shadow-md"
+                id="collapsed-header-items"
+            >
+                <div
+                    class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center"
+                >
+                    <a class="header-links" href="index.html"> Home </a>
+                    <a class="header-links" href="comparison.html"> AI comparison</a>
+                    <a class="header-links" href="about.html"> About us </a>
+                </div>
+                <div
+                    class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center"
+                >
+                    <a
+                        href="report.html"
+                        aria-label="signup"
+                        class="tw-rounded-full tw-bg-white tw-px-3 tw-py-2 tw-text-black tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2"
+                    >
+                        <span>Full Report</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <button
+                class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-white lg:tw-hidden"
+                onclick="toggleHeader()"
+                aria-label="menu"
+                id="collapse-btn"
+            ></button>
+        </header>
+
+        <section
             class="hero-section tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-mt-[50px]"
             id="hero-section"
         >
@@ -87,7 +166,654 @@
                     class="tw-flex tw-flex-col tw-place-content-center tw-items-center"
                 >
                     <div
-                        class="reveal-up gradient-text tw-text-left tw-text-6xl tw-font-semibold tw-uppercase tw-leading-[80px] max-lg:tw-text-4xl max-md:tw-leading-snug"
+                        class="reveal-up gradient-text tw-text-center tw-text-6xl tw-font-semibold tw-uppercase tw-leading-[80px] max-lg:tw-text-4xl max-md:tw-leading-snug"
+                    >
+                        <span class=""> The Future of Mental Health </span>
+                        <br />
+                        <span class=""> Disruptive AI Chatbot Companions </span>
+                    </div>
+
+                    <div
+                        class="reveal-up tw-relative tw-mt-8 tw-flex tw-w-full tw-place-content-center tw-place-items-center"
+                        id="dashboard-container"
+                        >
+                    <div
+                        class="tw-relative tw-max-w-[80%] tw-overflow-hidden tw-rounded-xl tw-bg-transparent max-md:tw-max-w-full"
+                        id="dashboard"
+                    >
+                        <img
+                            src="./assets/images/home/chatai.jpeg"
+                            alt="chatai"
+                            class="tw-h-half tw-w-full tw-object-cover tw-opacity-90 max-lg:tw-object-contain"
+                        />
+                    </div>
+                    
+                    </div>
+                        <div
+                            class="hero-img-bg-grad tw-absolute tw-left-[20%] tw-top-5 tw-h-[200px] tw-w-[200px]"
+                         ></div>
+                    </div>
+                    <br />
+                    <br />
+                    <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl tw-text-center">
+                        What is Disruptive Technologies?
+                    </h2>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        Disruptive technologies are innovations capable of transforming existing industries and established workflows. These technologies introduce new features or methods that are capable of outperforming existing solutions, if widely adopted. Inventions like electricity, the Internet, and–most recently–Artificial Intelligence (AI) are examples of disruptive technologies. History has proven that disruptions are not always negative but will this be the case for AI ChatBots?
+                    </div>   
+                    <br />
+                    <br />
+                    <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl tw-text-center">
+                        The Power of AI: A Disruptive Force
+                    </h2>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        AI’s vast potential is apparent in its many forms: interactive AI (e.g. chatbots), functional AI (e.g. proofreading tools), visual AI (e.g. image recognition). These applications demonstrate AI’s transformative capabilities. As a disruptive technology, it replaces traditional and existing systems in business, healthcare, travel, and countless other industries. 
+                    </div>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-jusitfy tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        AI chatbots simulate human conversations and, in professional assistive contexts, can be used from customer service rolls to mental health support. As defined by Oracle Cloud Infrastructure (OCI), AI is “a <b>computer program</b> that <b>simulates</b> and <b>processes human conversation</b> (either written or spoken, allowing humans to <b>interact</b> with digital devices as if they were <b>communicating</b> with a real person.” AI chatbots are capable of emulating human support and providing general health diagnostics. These chatbots used advanced algorithms such as deep learning to understand and respond to a user’s concerns and self-observations.
+                    </div>
+                    <br />
+                    <br />
+                    <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl tw-text-center">
+                        Accessing Mental Health Services
+                    </h2>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        There are many factors that can impact a person’s mental health: emotional skills, substance abuse, poverty, and inequality (WHO, 2022). Mental illnesses can vary from different conditions in severity (NIH, n.d.) and impact a person’s well-being and quality of life.
+                    </div>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-jusitfy tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        A recent large-scale study co-led by Harvard Medical School and University of Queensland predict that by the age of 75 years old, one in two individuals will develop at least one mental health disorder (McGraft et al., 2023). In the same study, it was found that depressive disorders were still the most prevalent among their respondents alongside alcohol use disorder (McGraft et al., 2023). To make matters worse, according to the <b>World Health Organization (WHO),</b> over <b>150 million people</b> in the European Region are currently living with a mental health condition. The COVID-19 pandemic has further exacerbated this crisis, limiting access to services and increasing stress levels. 
+                    </div>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-jusitfy tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        Given these challenges, <b>traditional mental health services are highly recommended</b> for those who can afford it. The services typically involve in-person counseling, therapy sessions, or psychiatric consultations. These services are provided by licensed professionals such as psychologists, psychiatrists, or therapists who offer  personalized treatment plans, talk therapy, and medication management when necessary. However, it’s no secret that not everyone has the financial capability to afford it.
+                    </div>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-jusitfy tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                    Traditional mental health providers have embraced online platforms to increase accessibility. A few examples include:
+                    </div>
+                    <div
+                    class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5"
+                     >
+                    <div
+                        class="tw-mt-6 tw-flex tw-max-w-[80%] tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col"
+                    >
+                        <div
+                            class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
+                        >
+                            <div class="tw-text-4xl max-md:tw-text-2xl">
+                                <i class="bi bi-globe"></i>
+                            </div>
+    
+                            <div class="tw-flex tw-flex-col tw-gap-4">
+                                <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                    BetterHelp
+                                </h3>
+                                <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                    Offers online therapy with licensed counselors via video calls, messaging, and live chats.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div
+                            class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
+                        >
+                            <div class="tw-text-4xl max-md:tw-text-2xl">
+                                <i class="bi bi-bar-chart-fill"></i>
+                            </div>
+    
+                            <div class="tw-flex tw-flex-col tw-gap-4">
+                                <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                    Talkspace
+                                </h3>
+                                <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                    Provides therapy sessions tailored to individual needs, including specialized programs for couples or teens.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div
+                            class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
+                        >
+                            <div class="tw-text-4xl max-md:tw-text-2xl">
+                                <i class="bi bi-cloud-fill"></i>
+                            </div>
+    
+                            <div class="tw-flex tw-flex-col tw-gap-4">
+                                <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                    Cerebral
+                                </h3>
+                                <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                    Focuses on mental health treatment with a subscription-based model that combines therapy and medication management.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl tw-text-center">
+                        Role of AI in Bridging Mental Health Support Gaps
+                    </h2>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        Recent advancements in <b>AI technology</b> have significantly enhanced mental health services by addressing challenges like affordability, accessibility, and availability. AI-powered tools can analyze user input to provide personalized insights, suggest coping mechanisms, or connect users to appropriate professionals.
+                    </div>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        AI automation extends to customer support for mental health services. These systems streamline appointment scheduling, answer frequently asked questions, and ensure seamless communication between users and mental health providers. 
+                    </div>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        By integrating traditional and AI-driven approaches, the mental health sector will be able to deliver more inclusive, accessible, and effective care. <b>AI companions</b> like Character AI and Replika can provide conversational support, but they lack the depth and expertise of a trained therapist. Despite these limitations, AI-powered tools are ever-developing:
+                    </div>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        <i class="bi bi-check-all !tw-text-2xl"></i>
+                        According to a study published in the <b>National Institutes of Health's National Library of Medicine (NLM),</b> there's a growing need for specialized support for young people experiencing depression and anxiety. Notably, a 2-week intervention using a <b>chatbot</b> demonstrated effectiveness in reducing these symptoms, compared to a control group receiving self-help materials. 
+                    </div>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        AI chatbots such as 
+                        <u><a href="https://woebothealth.com/">Woebot, </a></u>
+                        <u><a href="https://www.youper.ai/">Youper, </a></u>
+                        <u><a href="https://www.wysa.com">Wysa, </a></u>
+                        <u>and </u>
+                        <u><a href="https://getmarlee.com">Marlee </a></u>
+                        are rising in popularity due to their ability to simulate empathetic conversations. By employing techniques such as CBT, chatbots are able to help users manage stressors in real-time with guided self-help tools, immediate availability, privacy, and anonymity which are often points of worry and stigmatized.
+                    </div>
+                    <div class="reveal-up carousel-container">
+                        <div
+                            class="carousel lg:w-place-content-center tw-mt-6 tw-flex tw-w-full tw-gap-5 max-md:tw-gap-2"
+                        >
+                            <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                                <a href="https://woebothealth.com/">
+                                <img
+                                    src="./assets/images/brand-logos/google.svg"
+                                    alt="Woebot"
+                                    class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                                    srcset=""
+                                />
+                                </a>
+                            </div>
+                            <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                                <a href="https://www.youper.ai/">
+                                <img
+                                    src="./assets/images/brand-logos/google.svg"
+                                    alt="Youper"
+                                    class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                                    srcset=""
+                                />
+                                </a>
+                            </div>
+                            <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                                <a href="https://www.wysa.com">
+                                <img
+                                    src="./assets/images/brand-logos/google.svg"
+                                    alt="Wysa"
+                                    class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                                    srcset=""
+                                />
+                                </a>
+                            </div>
+                            <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                                <a href="https://getmarlee.com">
+                                <img
+                                    src="./assets/images/brand-logos/google.svg"
+                                    alt="Marlee"
+                                    class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                                    srcset=""
+                                />
+                                </a>
+                            </div>
+                            <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                                <a href="https://woebothealth.com/">
+                                <img
+                                    src="./assets/images/brand-logos/google.svg"
+                                    alt="Woebot"
+                                    class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                                    srcset=""
+                                />
+                                </a>
+                            </div>
+                            <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                                <a href="https://www.youper.ai/">
+                                <img
+                                    src="./assets/images/brand-logos/google.svg"
+                                    alt="Youper"
+                                    class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                                    srcset=""
+                                />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        However, AI chatbots like these still need to be further researched on the efficacy of agent-guided CBT outside of English, particularly in nuanced languages wherein words change depending on sentence structure. This finding underscores the importance of language-specific considerations when developing and evaluating AI-powered mental health interventions. 
+                    </div>
+                    <br />
+                    <br />
+                    <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl tw-text-center">
+                        Case Studies and Testimonies
+                    </h2>
+                    
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        <h2 class="reveal-up tw-text-2xl max-md:tw-text-xl tw-text-left">
+                            <u>Mental Health Needs</u>
+                        </h2>
+                        <br />
+                        <b>Adequate response to the mental health burden is scarce</b> (WHO, 2021). In low to middle income countries, 76%-85% of people with severe mental disorders received no treatment. Even the small fraction of people with access to mental health care potentially receives poor quality care according to WHO Mental Health Atlas 2011 due to scarcity and inequitable distribution of resources. 
+                    </div>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        More significantly, there is a <b>huge insufficiency of mental health workers,</b> especially in low to middle income countries. In half of the world’s population, there is only an average of one psychiatrist for every 200,000 people, and there are even less personnels trained to provide psychosocial interventions (Tahira, 2024). 
+                    </div>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        <h2 class="reveal-up tw-text-2xl max-md:tw-text-xl tw-text-left">
+                            <u>User Experience</u>
+                        </h2>
+                        <br />
+                        Mental health has been long stigmatized not only because of societal preconceptions, but also due to inaccessibility in terms of financial availability. The sudden prevalence of AI technologies led to the integration of AI chatbots in numerous softwares, applications, and even websites to improve user experience and faster chat response time.
+                    </div>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        <b>AI chatbots may encourage deep self-disclosure</b> for individuals who may hesitate to share intimate details about themselves. A study conducted by Lee et al. (2020) suggests that AI chatbots may be able to help mental health professionals (MHP) to understand people’s mental status through deeper self-disclosure, and to establish a deeper trust between the MHP and the subjects. This was possible due to the capability of conversational agents (CA) in satisfying the emotional needs of students. The results of a study conducted by Kim et al. (n.d.) noted that <b>CAs are attentive listeners due to their lack of emotions, protect private information, and give unbiased advice</b> based on the provided data.
+                    </div>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        Apart from this, AI chatbots provide effective assistance to specific needs of various demographics, as they <b>provide quick and useful responses.</b> The technology optimizes workload, and facilitates tasks that would otherwise require human intervention (Følstad & Brandtzaeg, 2020). Such efficiency for users is beneficial in many aspects, including customer service and general contexts. With this efficiency in mind, AI chatbot capabilities can be improved in numerous aspects, such as learning engagement among students. New and efficient technologies like AI chatbots have influenced students’ interests and learning capability, indicating that AI chatbots can serve as <b>effective tools in enhancing learning engagement</b> (Lee et al., 2022). Alongside that, numerous students utilize AI chatbots for thinking development, knowledge acquisition, and motivation enhancement—AI chatbots provide support to students academically, optimizing learning and positively impacting cognitive performance (Ma et al., 2024). 
+                    </div>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        Nonetheless, <b>poor data produces a poor AI model.</b> If an AI chatbot’s model is not trained properly and well, AI chatbots can perpetuate biases present in their training data. This remains a constant challenge for many generative AI models (Niloy et al., 2024). In lieu of such concerns with AI chatbots, they can also provide inaccurate or misleading information, which can be a concern for information-sensitive workfields (Perrone, 2024).
+                    </div>
+                    <div
+                    class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                >
+                    Furthermore, <b>AI chatbots are prone to misinterpretation of prompts;</b> users may receive irrelevant responses that deviate from their expectations (Følstad & Brandtzaeg, 2020). Alongside that, AI chatbots can simulate conversation, but lack the depth and context in natural human interaction. Such limitations could pose challenges in context such as mental health support and emotional intelligence (Perrone, 2024). This proves a need to improve natural language processing (NLP) models and capabilities.
+                </div>
+                <div
+                        class="tw-relative tw-max-w-[80%] tw-overflow-hidden tw-rounded-xl tw-bg-transparent max-md:tw-max-w-full"
+                        id="dashboard"
+                    >
+                        <img
+                            src="./assets/images/report/posneg.png"
+                            alt="chatai"
+                            class="tw-h-half tw-w-full tw-object-cover tw-opacity-90 max-lg:tw-object-contain"
+                        />
+                </div>
+                <br />
+                <br />
+                <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl tw-text-center">
+                    Disruptive Potential of AI Chatbots
+                </h2>
+                
+                <div
+                    class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                >
+                    <h2 class="reveal-up tw-text-2xl max-md:tw-text-xl tw-text-left">
+                        <u>Accessibility and Affordability</u>
+                    </h2>
+                    <br />
+                        One way AI chatbots are disruptive is by breaking down barriers to accessibility. In a study by Devillers (2021), a significant development is the creation of "companion robots" (or chatbots) that assist patients with disabilities by providing therapy or tracking their health over time. These robots are especially helpful for individuals with conditions like Alzheimer's or other brain diseases, as they can offer care 24/7 with patience and without tiring. Additionally, traditional therapy and medical consultations are often expensive, time-consuming, or hard to access due to location. AI chatbots, however, provide quick, 24/7 assistance at a much lower cost, making it easier for more people to receive mental health and medical advice. This change enables more people to get the help they need without the usual barriers of time or cost.
+                </div>
+                <div
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        The state of mental healthcare as often expensive or inaccessible, especially to minorities, is recognizable. Habicht, et al. (2024) conducted a study to prove the potential of digital tools, “personalized artificial intelligence-enabled self-referral chatbot”, in bridging the accessibility gap of mental healthcare. The study found a significant increase (15%)  in referrals was found, particularly in minority groups such as nonbinary (179%)  and ethnic (29%)  individuals. The study reported that the patients' recognition of needing help and the chatbot's human-free nature were the drivers for encouraging more diverse groups, based on qualitative feedback from 42,332 individuals (Habicht, et al., 2024).
+                </div>
+                <div
+                    class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                >
+                    <h2 class="reveal-up tw-text-2xl max-md:tw-text-xl tw-text-left">
+                        <u>Emotional and Behavioral Impact</u>
+                    </h2>
+                    <br />
+                        In a study titled "An Overview of Chatbot-Based Mobile Mental Health Apps: Insights From App Descriptions and User Reviews" by Haque et al. (2023), the results of their study conclude that people liked chatting with bots because they felt personal and friendly. Since bots are always available, some people might start relying on them more than talking to friends and family. The bots created a safe space where people felt comfortable sharing personal or sensitive information without being judged. Mental health is often stigmatized, making people hesitant to seek help. Chatbots offer a safe, anonymous space for users to share their feelings without judgment.
+                </div>
+                <div
+                    class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        According to a study published in JMIR Mental Health (Forbat et al., 2017), a conversational agent named Woebot was designed to deliver basic CBT principles through brief, daily interactions within a messaging app. Each interaction began by assessing mood and context, then presented core CBT concepts through videos or interactive exercises. Woebot employed a decision-tree framework to guide conversations, with predetermined responses and limited natural language processing for user input.
+                </div>
+                <div
+                    class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        In need of an active listener to have emotional conversations, AI chatbots is an option to consider. SimSimi is a widely used open-domain social chatbot. It differs from other notable chatbots (Woebot, Youper, etc.) as it is not intentionally designed to support mental health conditions, but rather to flexibly discuss anything. In a study by Chin, et al. (2023), they analyzed more than 150,000 conversation utterances in SimSimi, with specified key words such as “depressed” and “sad”. They aimed to identify how the AI chatbot facilitates sadness and depressive moods of the users and the cultural differences of expression of such emotion among Western (Canada, the United Kingdom, and the United States) and Eastern countries  (Indonesia, India, Malaysia, the Philippines, and Thailand). 
+                </div>
+                <div
+                    class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        Among their findings, it was found that 18.24% of the analyzed conversations of users regarded the chatbot as a social actor, empathizing with or comforting the chatbot. With the users feeling emotional support from the chatbot and identifying it as a virtual nonhuman partner, it allowed them to openly engage in emotional discourse and express sadness. This is further proven through a comparison of their findings with a previous study in 2017 that analyzed the public discussion of depression on Twitter (now known as “X”) where the researchers discovered the higher prevalence of conversations about sadness in chatbots (49.83%) than on Twitter (7.53%) (Chin, et al., 2023). 
+                </div>
+                <div
+                    class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        Students commonly face various stressors that can impact their mental health which may then also impact their academic performance.  Abot is an AI chatbot designed to encourage students in lifestyle habits and well-being. A research by Sia, et al., (2021) involved 25 senior high school students using Abot for a week to investigate students’ acceptability and perceived effectiveness on their well-being. The evaluation based on the average scores using a 4-point Likert scale  were 3.35 on performance, 3.36 on humanity, and 3.68 on affect, contributing to the potential of AI chatbots as tools to assist students in managing their mental health.
+                </div>
+                <div
+                    class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                >
+                    <h2 class="reveal-up tw-text-2xl max-md:tw-text-xl tw-text-left">
+                        <u>Risks</u>
+                    </h2>
+                    <br />
+                        It is important to note that although AI chatbots may help monitor and pose as a guide to one’s self-management of their mental health, it is unable to replace human mental health professionals and their services. This notion is, according to Khawaja and Bélisle-Pipon (2023), is a “kind of therapeutic misconception” where being unaware of or confusing the role of these chatbots may imply an individual underestimating the restrictions and limitations of AI chatbots while overestimating its ability to provide therapeutic support and guidance.  These misconceptions may be formed due to “inaccurate marketing of such chatbots, forming a digital therapeutic alliance with these chatbots, inadequate design of the chatbots leading to biases, and potentially limiting one's autonomy” (Khawaja and Bélisle-Pipon, 2023). 
+                </div>
+                <div
+                    class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        The manner of communication with an AI chatbot is mainly performed through an exchange of texts, a conversation.  However, AI chatbots are nonhuman and so, are unable to develop the same meaningful therapeutic alliance as human mental health professionals can with their patients.  It may feel as if there is a connection of sorts between user and chatbot, similar to a study found in which users described their experience with Woebot, stating they thought of the chatbot showing concern for them (Khawaja & Bélisle-Pipon, 2023; Darcy, et al., 2021). But it is misleading as users may believe this bond is real.
+                </div>
+                <div
+                    class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        It risks therapeutic misconception as they may trust the chatbot with their sensitive information and therapeutic services without human intervention (Khawaja & Bélisle-Pipon, 2023). With this risk, it can pose further risks in the long-term in providing ineffective and inaccurate advice or, in bleaker cases, negatively impacting a user’s mental health. Though applications or the chatbot itself may give reminders of or encourage its users to receive formal therapy, this effort may not be sufficient to avoid therapeutic misconception. 
+                </div>
+                <br />
+                <br />
+                <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl tw-text-center">
+                    Limitations and Ethical Considerations
+                </h2>
+                <div
+                    class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        AI chatbots have experienced significant growth in various sectors, including customer service and mental health support. However, their rapid integration comes with fundamental limitations that need ethical considerations, particularly in addressing users' emotional and diagnostic needs.
+                </div>
+                <div
+                    class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                >
+                    <h2 class="reveal-up tw-text-2xl max-md:tw-text-xl tw-text-left">
+                        <u>Challenges in Diagnostics</u>
+                    </h2>
+                    <br />
+                        AI chatbots take into account various data from across varying sources to make an informed decision. However, due to this, there is a likelihood that due to the vast database an AI chatbot has to sort through, it has the potential of making a misdiagnosis.  In this case, it runs the risk of potentially making a diagnosis that is <b>not well-accustomed to the beliefs of its users.</b> For example, a user who grew up in a conservative family might get the wrong implications from the diagnosis of the AI chatbot who did not take into account the upbringing of its user. 
+                </div>
+                <div
+                    class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                >
+                    <h2 class="reveal-up tw-text-2xl max-md:tw-text-xl tw-text-left">
+                        <u>The Absence of Human Empathy</u>
+                    </h2>
+                    <br />
+                        AI chatbots lack the ability to perceive, interpret, and respond to complex emotions, <b>making them unable to replicate genuine human interactions and to detect subtle, non-verbal cues.</b> Their reliance on datasets and algorithms limits their capacity to build trust, de-escalate emotional situations, or provide effective psychotherapy as they cannot engage in discursive practices or guide users toward self-understanding (Sedlakova & Trachel, 2022). <b>This empathy gap  can delay users from seeking professional help, potentially worsening their condition.</b> Additionally, anthropomorphism bias, wherein users mistakenly attribute human-like compassion to chatbots, raises ethical concerns. Halls (2023) highlights how human interaction, even a single meaningful connection daily, improves well-being—something that AI cannot replicate. Developers bear ethical responsibility to clarify AI’s limitations in emotional support, as misleading users may lead to misplaced trust and harm (AI & Society, 2020).
+                </div>
+                <div
+                    class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                >
+                    <h2 class="reveal-up tw-text-2xl max-md:tw-text-xl tw-text-left">
+                        <u>Data Privacy and Identity Theft Risks in AI Chatbots</u>
+                    </h2>
+                    <br />
+                        In line with this, the issue of data privacy always comes up when dealing with AI chatbots. Usually, most applications or websites which use AI chatbots ask users to create an account with them. This runs the risk of individuals’ <b>identity being stolen or otherwise used for other nefarious reasons.</b> In 2023 for example, the Philippines saw a 13.9% increase in cyber-identity theft cases compared to 2022 (Tupas, 2024).  This proves how easy it is for a person’s identity to be stolen, and this risk itself carries over in the use of chatbots. It is for this reason that it is essential for applications and websites which use AI chatbots to have transparency to their users with regards to how they use the user’s information.
+                </div>
+                <br />
+                <br />
+                <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl tw-text-center">
+                    Conclusion
+                </h2>
+                <div
+                    class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        AI, as innovative and as helpful in bridging gaps in emotional and diagnostic support, and accessibility, still <b>has limitations and room for improvement</b> much like other new and developing technologies.
+                </div>
+                <div
+                    class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        The lack of human empathy and understanding of nuance poses a significant drawback in handling emotionally sensitive situations and diagnostics. <b>As AI’s development continues, it becomes essential to address its limitations through ethical design and clearer parameters.</b> This approach ensures that chatbot usage can meaningfully enhance, rather than undermine, mental health support as an auxiliary tool to human solutions.
+                </div>
+                <div
+                    class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                        Until this becomes a standard rather than a possibility, human intervention and further research is necessary.
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%]"
+        >
+            <h3
+                class="tw-text-4xl tw-font-medium tw-text-gray-300 max-md:tw-text-2xl"
+            >
+                Faq
+            </h3>
+            <div
+                class="tw-mt-5 tw-flex tw-min-h-[300px] tw-w-full tw-max-w-[850px] tw-flex-col tw-gap-4"
+            >
+                <div
+                    class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]"
+                >
+                    <div
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>What license are the source code?</span>
+                        <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                    </div>
+                    <div class="content">
+                        All the templates are under MIT license
+                    </div>
+                </div>
+
+                <div
+                    class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]"
+                >
+                    <div
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>Can I request new templates?</span>
+                        <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                    </div>
+                    <div class="content">
+                        you can request a generic template from
+                        <a
+                            href="https://github.com/PaulleDemon/landing-pages/issues/new/choose"
+                            class="tw-underline"
+                        >
+                            Github template request</a
+                        >. If you are looking for Custom design you should
+                        <a href="https://tally.so/r/woO0Kx" class="tw-underline"
+                            >contact here</a
+                        >
+                    </div>
+                </div>
+
+                <div
+                    class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]"
+                >
+                    <div
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>I need a custom template?</span>
+                        <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                    </div>
+                    <div class="content">
+                        If you are looking for Custom design you can
+                        <a href="https://tally.so/r/woO0Kx" class="tw-underline"
+                            >contact here</a
+                        >
+                    </div>
+                </div>
+
+                <div
+                    class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]"
+                >
+                    <div
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>Will you add new templates?</span>
+                        <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                    </div>
+                    <div class="content">
+                        New templates are added every Friday. So star ⭐️
+                        <a
+                            href="https://github.com/PaulleDemon/awesome-landing-pages"
+                            class="tw-underline"
+                            >Github</a
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="tw-mt-20 tw-flex tw-flex-col tw-place-items-center tw-gap-4"
+            >
+                <div class="tw-text-3xl max-md:tw-text-2xl">
+                    Still have questions?
+                </div>
+                <a
+                    href="http://"
+                    class="btn !tw-rounded-full !tw-border-[1px] !tw-border-solid !tw-border-gray-300 !tw-bg-transparent tw-transition-colors tw-duration-[0.3s]"
+                >
+                    Contact
+                </a>
+            </div>
+        </section>
+
+        <section
+            class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%] max-md:tw-px-2"
+        >
+            <div
+                class="tw-flex tw-w-full tw-max-w-[80%] tw-place-content-center tw-place-items-center tw-justify-between tw-gap-3 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-6 max-md:tw-max-w-full max-md:tw-flex-col"
+            >
+                <div class="tw-flex tw-flex-col tw-gap-1">
+                    <h2 class="tw-text-3xl tw-text-gray-300 max-md:tw-text-xl">
+                        Join our newsletter
+                    </h2>
+                    <div class="tw-text-gray-300">Lorem ipsum dolor sit.</div>
+                </div>
+
+                <div
+                    class="tw-flex tw-h-[60px] tw-place-items-center tw-gap-2 tw-overflow-hidden tw-p-2"
+                >
+                    <input
+                        type="email"
+                        class="input tw-h-full tw-w-full !tw-border-gray-600 tw-p-2 tw-outline-none"
+                        placeholder="email"
+                    />
+                    <a
+                        class="btn !tw-rounded-full !tw-border-[1px] !tw-border-solid !tw-border-gray-300 !tw-bg-transparent tw-transition-colors tw-duration-[0.3s]"
+                        href=""
+                    >
+                        Signup
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer
+            class="tw-mt-auto tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-p-[5%] tw-px-[10%] tw-text-white max-md:tw-flex-col"
+        >
+            <div
+                class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full"
+            >
+                <img
+                    src="./assets/logo/logo.png"
+                    alt="logo"
+                    srcset=""
+                    class="tw-max-w-[120px]"
+                />
+                <div>
+                    2 Lord Edward St,
+                    <br />
+                    D02 P634,
+                    <br />
+                    United States
+                </div>
+                <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div>
+                <div class="tw-flex tw-gap-4 tw-text-2xl">
+                    <a href="" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a
+                        href="https://twitter.com/@pauls_freeman"
+                        aria-label="Twitter"
+                    >
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a
+                        href="https://instagram.com/"
+                        class="tw-h-[40px] tw-w-[40px]"
+                        aria-label="Instagram"
+                    >
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+                <h2 class="tw-text-3xl max-md:tw-text-xl">Company</h2>
+                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                    <a href="" class="footer-link">Use cases</a>
+                    <a href="" class="footer-link">Integrations</a>
+                    <a href="" class="footer-link">Change logs</a>
+                    <a href="" class="footer-link">Blogs</a>
+                    <a href="" class="footer-link">Contact</a>
+                </div>
+            </div>
+
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+                <h2 class="tw-text-3xl max-md:tw-text-xl">Resources</h2>
+                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                    <a href="" class="footer-link">About us</a>
+                    <a href="" class="footer-link">FAQ</a>
+                    <a href="" class="footer-link">Contact Us</a>
+                    <a href="" class="footer-link">Blogs</a>
+                    <a href="" class="footer-link">Privacy policy</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+        integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+        integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./index.js"></script>
+</html>
+        >
+            <div
+                class="tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-p-4"
+            >
+                <div
+                    class="tw-flex tw-flex-col tw-place-content-center tw-items-center"
+                >
+                    <div
+                        class="reveal-up gradient-text tw-text-center tw-text-6xl tw-font-semibold tw-uppercase tw-leading-[80px] max-lg:tw-text-4xl max-md:tw-leading-snug"
                     >
                         <span class=""> Full Report </span>
                         <br />
@@ -104,41 +830,40 @@
                     >
                         <img
                             src="./assets/images/home/chatai.jpeg"
-                            alt="dashboard"
+                            alt="chatai"
                             class="tw-h-half tw-w-full tw-object-cover tw-opacity-90 max-lg:tw-object-contain"
                         />
                     </div>
+            </section>
                     
+            <section>
 
                         <div
                             class="hero-img-bg-grad tw-absolute tw-left-[20%] tw-top-5 tw-h-[200px] tw-w-[200px]"
                          ></div>
                     </div>
-                  <div class="disruptive" style="text-align: justify;">
                     <br />
                     <br />
-                    <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl tw-text-jusitfy">
+                    <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl">
                         What is Disruptive Technologies?
                     </h2>
                     <div
-                        class="reveal-up tw-mt-10 tw-max-w-[450px] tw-p-2 tw-text-jusitfy tw-text-gray-300 max-lg:tw-max-w-full"
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
                     >
                         Disruptive technologies are innovations capable of transforming existing industries and established workflows. These technologies introduce new features or methods that are capable of outperforming existing solutions, if widely adopted. Inventions like electricity, the Internet, and–most recently–Artificial Intelligence (AI) are examples of disruptive technologies. History has proven that disruptions are not always negative but will this be the case for AI ChatBots?
-                    </div>  
-                </div>  
-                <div class="power" style="text-align: justify;">
+                    </div>   
                     <br />
                     <br />
-                    <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl tw-text-jusitfy">
+                    <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl">
                         The Power of AI: A Disruptive Force
                     </h2>
                     <div
-                        class="reveal-up tw-mt-10 tw-max-w-[450px] tw-p-2 tw-text-jusitfy tw-text-gray-300 max-lg:tw-max-w-full"
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-left tw-text-gray-300 max-lg:tw-max-w-full"
                     >
                         AI’s vast potential is apparent in its many forms: interactive AI (e.g. chatbots), functional AI (e.g. proofreading tools), visual AI (e.g. image recognition). These applications demonstrate AI’s transformative capabilities. As a disruptive technology, it replaces traditional and existing systems in business, healthcare, travel, and countless other industries. 
                     </div>
                     <div
-                        class="reveal-up tw-mt-10 tw-max-w-[450px] tw-p-2 tw-text-jusitfy tw-text-gray-300 max-lg:tw-max-w-full"
+                        class="reveal-up tw-mt-10 tw-max-w-[600px] tw-p-2 tw-text-jusitfy tw-text-gray-300 max-lg:tw-max-w-full"
                     >
                     AI chatbots simulate human conversations and, in professional assistive contexts, can be used from customer service rolls to mental health support. As defined by Oracle Cloud Infrastructure (OCI), AI is “a computer program that simulates and processes human conversation (either written or spoken, allowing humans to interact with digital devices as if they were communicating with a real person.” AI chatbots are capable of emulating human support and providing general health diagnostics. These chatbots used advanced algorithms such as deep learning to understand and respond to a user’s concerns and self-observations.
                     </div>
