@@ -177,6 +177,22 @@ header > .collapsible-header{
     color: #fff;
 }
 
+@keyframes drawLine {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+.line1 {
+  border-top: 1px solid white;
+  width: 0%;
+  animation: drawLine 2s ease-out forwards;
+  margin: 20px 0;
+  opacity: 0.5;
+}
+
 
 /* Style for the collapsible content such as faq commonly known as: accordion */
 
