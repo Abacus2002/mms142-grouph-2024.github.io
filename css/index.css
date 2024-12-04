@@ -186,6 +186,7 @@ header > .collapsible-header{
   }
 }
 .line1 {
+  color: white;
   border-top: 1px solid white;
   width: 0%;
   animation: drawLine 2s ease-out forwards;
