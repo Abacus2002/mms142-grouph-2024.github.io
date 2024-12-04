@@ -192,7 +192,7 @@ header > .collapsible-header{
   height: 3px; /* Define a height for the line */
   animation: drawLine 2s ease-out forwards;
   margin: 20px 0;
-  opacity: 1;
+  opacity: 0.75;
 }
 
 
