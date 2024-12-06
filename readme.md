@@ -1,28 +1,25 @@
+## About the Project
+This project was created by UPOU students as part of their MMS 142 requirement. It contains information about Disruptive Technology, AI Chatbots and its impact on the Mental Health Industry. The website can be viewed by the link below:
+- https://abacus2002.github.io/mms142-grouph-2024.github.io/index.html
 
-**Github**: https://github.com/PaulleDemon/awesome-landing-pages
+#### **Group Members**
+*To view the tasks and roles delegated to each group member, please check the Wiki.*
+- Frani, Sophia (Sof)
+- Fuentes, Alexia Kimberly
+- Furing, John Karl (JK)
+- Galang, Alexene Irish (Alex)
+- Gamao, James Joseph
+- Garcia, Mykaela
+- Garrido, Lara Althea: Thy-Shin
+- Geraldino, Princess Aizel (Zel)
+- Gloria, Gabrielle Faith
+- Gonzaga, Lara Flynn (Flynn)
+- Gonzales, Elise Aniela
+- Gonzales, Elian Angelo
+- Grecia, Gabriellyn (Geyb)
 
-## Usage
+#### Acknowledgment and CC License
+The group offers gratitude to the website template author: `PaulleDemon` whose repository can be found at:
+https://github.com/PaulleDemon/awesome-landing-pages
 
-* This template uses tailwind css every tailwind class are prefixed with `tw-`, to help differentiate
-  between tailwind classes and other classes  
-
-During development add the following to head tag
-
-```html
-<link rel="stylesheet" href="tailwind-runtime.css"><!--replace with path to your tailwind runtime-->
-```
-During production use
-
-```html
-<link rel="stylesheet" href="tailwind-build.css"><!--replace with path to your tailwind build-->
-```
-
-To start Tailwind during development use
-```html
-npm run start:tailwind
-```
-
-To create a build file use
-```html
-npm run build:tailwind
-```
+The Future of Mental Health: Disruptive AI Chatbot Companions © 2024 is licensed under CC BY-NC-SA 4.0 
